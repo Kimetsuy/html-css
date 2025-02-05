@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meus fundo</title>
+    <style>
+        /*background repeat, tenho que falar algo?*/
+        /*proxima aula nois vai botar pra fude*/
+        /*entao nengue,background size tendeu? foda*/
+        /*o background-size cover corta pra ocupar a vh toda*/
+        /*background attachment faz o seguinte, define o que o fundo vai fazer
+        o fixed vai deixar o fundo o fixo, se tu botar scrool ele vai scrolar*/
+        /*ordem shorthand color > image > position > repeat > size > attachment*/
+        body{
+            background: lightcoral url(Captura\ de\ tela\ 2024-09-10\ 205101.png) center center no-repeat fixed;
+            background-size: cover;
+        }
+        div.caixa {
+            width: 200px;
+            height: 150px;
+            background-color: lightgray;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin: 5px auto;
+            background-image: url(teste\ foda.png);
+        }
+        div#q1{
+            background-position: top left;
+        }
+        div#q2{
+            background-position: top right;
+        }
+        div#q3{
+            background-position: bottom left;
+        }
+        div#q4{
+            background-position: bottom right;
+        }
+        div#q5{
+            background-position: center bottom;
+        }
+        /*botei pra fude*/
+    </style>
+</head>
+<body>
+    <div class="caixa" id="q1"></div>
+    <div class="caixa" id="q2"></div>
+    <div class="caixa" id="q3"></div>
+    <div class="caixa" id="q4"></div>
+    <div class="caixa" id="q5"></div>
+</body>
+</html>

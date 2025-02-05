@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokehub</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        /* Paleta de cores */
+        /* #78C0F9 azul bebê
+           #FFDDCE rosa bebê
+           #FFFFFF branco
+           #FFDBE6 rosa fresco
+           #FE86A4 rosa foda
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FFDDCE; /* rosa bebê */
+            font-family: Arial, sans-serif;
+            width: 100%;
+            color: #333;
+            overflow-x: hidden; /* Impede o overflow da tela */
+        }
+        header{
+            background-color: #78C0F9;
+        }
+        main{
+            background-color: #FFFFFF;
+            align-items: center;
+            text-align: center;
+            width: 50%;
+            height: 98vh;
+            margin: auto;
+        }
+        footer{
+            width: 100%;
+            background-color: #FE86A4;
+            text-align: center;
+        }
+        article{
+            text-align: center;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: #FFDDCE;
+            font-weight: bold;
+        }
+        a:visited{
+            text-decoration: none;
+            color: #FFDDCE;
+            font-weight: bold;
+        }
+        div#header{
+            align-items: center;
+            align-content: center;
+        }
+        /* Container para a imagem e o texto */
+        .caixa {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+            white-space: nowrap; /* Garante que o conteúdo não quebre para a linha seguinte */
+            animation: scroll-left 15s linear infinite; /* Animação de rolagem */
+        }
+/*pegue uma amostra, vamos emitir uma fatura :speaking-head: :fire:*/
+        /* Animação de rolagem */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%); /* Começa fora da tela, à direita */
+            }
+            100% {
+                transform: translateX(-100%); /* Finaliza fora da tela, à esquerda */
+            }
+        }
+
+        /* Estilo do texto */
+        p {
+            color: #FE86A4; /* rosa foda */
+            font-size: 1.5rem;
+            max-width: 60%;
+        }
+
+        /* Estilo da imagem */
+        #caixa img {
+            width: 13%;
+            height: 13%;
+        }
+
+        /* Ajustes de responsividade para garantir que o conteúdo se ajuste em diferentes tamanhos de tela */
+        @media (max-width: 768px) {
+            p {
+                font-size: 1.2rem; /* Texto menor em telas menores */
+            }
+            #caixa img {
+                max-width: 80px; /* Imagem menor em telas pequenas */
+            } /*e primavera toooooodo anoooooooou*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Container de rolagem -->
+        <div class="caixa" id="caixa">
+            <img src="imagens/blimp-removebg-preview.png" alt="blimp boy">
+            <i>
+                <p>Pokehub</p>
+            </i>
+            <img src="imagens/download-removebg-preview.png" alt="cu que voa">
+        </div>
+        <div id="header">
+            <article><a href="about.html">about</a></article>
+            <article><a href="pokemons.html">pokemons</a></article>
+        </div>
+    </header>
+    <main>
+        <h1>poggers</h1>
+    </main>
+    <footer>Site feito e programado por Kimetsuy Yukki.</footer>
+</body>
+</html>

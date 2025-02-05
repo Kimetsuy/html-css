@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    font-family: arial;
+}
+
+h1 {
+    font-family:serif, monospace
+}
+p{
+    padding-right: 400px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    padding-left: 800px;
+}
