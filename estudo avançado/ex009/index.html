@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas agrupadas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            height: 40vh;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: grey;
+            color: white;
+        }
+        .cnome {
+            background-color: lightblue;
+        }
+        .cidade {
+            background-color: lightgreen;
+        }
+        .csexo {
+            background-color: lightcoral;
+        }
+        .cprofissao {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cidade">
+            <col class="csexo">
+            <col class="cprofissao">
+            <!--colgroup é uma tag que permite agrupar colunas de uma tabela-->
+        </colgroup>
+        <tr>
+            <th scope="col" >Nome</th>
+            <th scope="col" >Idade</th>
+            <th scope="col" >Sexo</th>
+            <th scope="col" >profisao</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>25</td>
+            <td>M</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>19</td>
+            <td>F</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>30</td>
+            <td>M</td>  
+            <td>Advogado</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>22</td>
+            <td>F</td>  
+            <td>Medica</td>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>27</td>
+            <td>M</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>21</td>
+            <td>M</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>23</td>
+            <td>F</td>
+            <td>Padeira</td>
+        </tr>
+        <tr>
+            <td>Joana</td>
+            <td>20</td>
+            <td>F</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+    <script>
+    </script>
+</body>
+</html>
