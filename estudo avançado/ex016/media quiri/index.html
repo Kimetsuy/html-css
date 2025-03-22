@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <link rel="stylesheet" href="estilos/main.css" media="screen">
+    <link rel="stylesheet" href="estilos/print.css" media="print">
+    <style>
+        /*media query = media type + media features*/
+    </style>
+</head>
+<body>
+    <header>
+        <h1>site teste da Yukki</h1>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">sobre</a></li>
+                <li><a href="#">contato</a></li>
+            </ul>
+    </header>
+    <main>
+        <section>
+            <h2>seja bem vindo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis iure qui officia consequatur rerum. Porro voluptatibus odio necessitatibus tenetur aut et fugiat hic exercitationem aspernatur dolorem ipsa, facilis repellat ab!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in repudiandae esse accusantium, vero aperiam fugit quae, atque repellat molestiae ipsum dicta excepturi earum recusandae consectetur, modi impedit ad ipsa.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eaque omnis adipisci quo voluptate culpa optio unde, totam facere maxime quae modi nihil fugiat molestiae beatae aspernatur repudiandae quidem laborum?</p>
+        </section>
+    </main>
+    <footer>
+        <p>todos os direitos reservados a yukki</p>
+        <p id="impresso">site impresso no dia</p><p id="data"></p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const dataElement = document.getElementById('data');
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            dataElement.textContent = today.toLocaleDateString('pt-BR', options);
+        });
+    </script>
+</body>
+</html>
