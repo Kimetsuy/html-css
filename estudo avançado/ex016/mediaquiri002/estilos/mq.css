@@ -1,0 +1,134 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, less than 576px) */
+@media print {
+    body {
+        background-color: blueviolet;
+    }
+    img#img1 {
+        display: block;
+        margin: 0 auto;
+
+    }
+    img#img2 {
+        display: none;
+    }
+    img#img3 {
+        display: none;
+    }
+    img#img4 {
+        display: none;
+    }
+    img#img5 {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        background-image: url(../../imagens/back-phone.jpg);
+        background-size: cover;
+    }
+    img#img1{
+        display: none;
+    }
+    img#img2{
+        display: block;
+        margin: 0 auto;
+
+    }
+    img#img3{
+        display: none;
+    }
+    img#img4{
+        display: none;
+    }
+    img#img5{
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        background-image: url(../../imagens/back-tablet.jpg);
+        background-size: cover;
+    }
+    img#img1{
+        display: none;
+    }
+    img#img2{
+        display: none;
+    }
+    img#img3{
+        display: block;
+        margin: 0 auto;
+
+    }
+    img#img4{
+        display: none;
+    }
+    img#img5{
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        background-image: url(../../imagens/back-pc.jpg);
+        background-size: cover;
+    }
+    img#img1{
+        display: none;
+    }
+    img#img2{
+        display: none;
+    }
+    img#img3{
+        display: none;
+    }
+    img#img4{
+        display: block;
+        margin: 0 auto;
+
+    }
+    img#img5{
+        display: none;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(../../imagens/back-tv.jpg);
+        background-size: cover;
+    }
+    img#img1{
+        display: none;
+    }
+    img#img2{
+        display: none;
+    }   
+    img#img3{
+        display: none;
+    }
+    img#img4{
+        display: none;
+    }
+    img#img5{
+        display: block;
+        margin: 0 auto;
+    }
+}
